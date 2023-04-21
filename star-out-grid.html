@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Out Grid Tests</title>
+  <link href="star-out-grid.css" link rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css" link rel="stylesheet" />
+</head>
+<body>
+  <h1>Star-Out Grid Input</h1>
+  
+  <form>
+    <label for="grid-size-input">Grid Size (2-10): </label>
+    <input type="number" id="grid-size-input" name="grid-size" min="2" max="10" value="">
+    <button type="button" id="generate-grid-btn">Generate Grid</button>
+    <br><br>
+    <div id="grid-form"></div>
+    <br><br>
+    <button type="button" id="submit-btn">Submit</button>
+  </form>
+ 
+  <div id="output"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script>
+  <script src="star-out-grid.js"></script>
+  <script src="star-out-grid.test.js"></script>
+</body>
+</html>
